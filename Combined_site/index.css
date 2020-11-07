@@ -1,0 +1,22 @@
+.card-deck {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-deck .card {
+  height: fit-content(100%) !important;
+  min-width: 196px;
+  overflow: auto;
+}
+
+@media (min-width: 576px) {
+  .card-deck .card {
+    margin-bottom: 5px;
+    height: fit-content(100%) !important;
+  }
+}
+
+.display-flex {
+  display: flex;
+  justify-content: space-between;
+}
